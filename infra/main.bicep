@@ -39,7 +39,7 @@ param contentUnderstandingLocation string = 'WestUS'
   azd: {
     type: 'location'
     usageName: [
-      'OpenAI.GlobalStandard.gpt-4o,100'
+      'OpenAI.GlobalStandard.gpt-4o,50'
     ]
   }
 })
@@ -65,7 +65,7 @@ param gptModelVersion string = '2024-08-06'
 
 @minValue(1)
 @description('Optional. Capacity of the GPT deployment: (minimum 10).')
-param gptDeploymentCapacity int = 100
+param gptDeploymentCapacity int = 50
 
 @description('Optional. The public container image endpoint.')
 param publicContainerImageEndpoint string = 'cpscontainerreg.azurecr.io'
